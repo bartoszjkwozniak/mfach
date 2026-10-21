@@ -119,77 +119,139 @@ const BRANCH_DATA = {
     ]
   },
 
-  build: {
-    themeClass: 'theme-build',
-    metaTitle: 'MFach - Budownictwo, Wykończenia & Hydraulika | Marcin 695 525 389',
-    image: 'assets/hero_build.png',
-    imageAlt: 'Marcin MFach - Budownictwo, Wykończenia Wnętrz i Hydraulika',
+  remont: {
+    themeClass: 'theme-remont',
+    metaTitle: 'MFach - Prace Wykończeniowe & Remonty Domów | Marcin 695 525 389',
+    image: 'assets/hero_remont.png',
+    imageAlt: 'Marcin MFach - Prace Wykończeniowe i Remonty Domów',
     badgeIcon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
-    badgeText: 'Usługi Ogólnobudowlane, Wykończenia Wnętrz & Hydraulika',
-    title: 'Solidne <span class="highlight">wykończenia wnętrz</span> i instalacje hydrauliczne',
-    desc: 'Kompleksowe remonty mieszkań i domów, niezawodne instalacje wodno-kanalizacyjne, montaż ceramiki, gładzie, malowanie i prace montażowe. Czysto, dokładnie i na lata.',
+    badgeText: 'Prace Wykończeniowe & Remonty Domów',
+    title: 'Precyzyjne <span class="highlight">wykończenia wnętrz</span> i kompleksowe remonty',
+    desc: 'Kompleksowe remonty mieszkań i domów, gładzie bezpyłowe, malowanie, układanie paneli, kafelkowanie oraz estetyczne zabudowy G-K. Czysto, dokładnie i na lata.',
     trustPoints: [
-      { title: 'Kompleksowość usług', desc: 'Od hydrauliki i gładzi po montaż finalny' },
-      { title: 'Porządek i czystość prac', desc: 'Zabezpieczenie mienia i regularne sprzątanie' },
-      { title: 'Sprawdzone materiały budowlane', desc: 'Doradztwo techniczne i pomoc w zakupach' },
-      { title: 'Terminowa realizacja', desc: 'Praca według uzgodnionego z góry harmonogramu' }
+      { title: 'Dokładność i estetyka', desc: 'Perfekcyjne gładzie i równe odcięcia kolorów' },
+      { title: 'Porządek i czystość', desc: 'Zabezpieczenie mienia i regularne sprzątanie' },
+      { title: 'Sprawdzone materiały', desc: 'Pomoc w doborze i transporcie materiałów' },
+      { title: 'Terminowa realizacja', desc: 'Praca według uzgodnionego harmonogramu' }
     ],
-    servicesHeading: 'Oferta Remontowo-Budowlana & Hydrauliczna',
-    servicesDesc: 'Oferuję szeroki zakres prac remontowych i instalacyjnych dla domów, mieszkań i lokali użytkowych.',
+    servicesHeading: 'Oferta Wykończeń Wnętrz i Remontów',
+    servicesDesc: 'Dbam o każdy detal, aby Twoje wnętrze było funkcjonalne, estetyczne i gotowe do zamieszkania.',
     services: [
       {
-        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`,
-        title: 'Instalacje Hydrauliczne & Wod-Kan',
-        desc: 'Montaż i modernizacja rurociągów wody użytkowej, odpływów kanalizacyjnych, podłączenia zaworów oraz usuwanie nieszczelności.',
-        features: ['Bezpieczne połączenia rur', 'Piony i podejścia kanalizacyjne', 'Pomiary szczelności ciśnieniowej']
-      },
-      {
-        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>`,
-        title: 'Biały Montaż & Remont Łazienek',
-        desc: 'Montaż stelaży podtynkowych (Geberit), misek WC, kabin prysznicowych, wanien, umywalek, armatury i odpływów liniowych.',
-        features: ['Idealne uszczelnienia silikonowe', 'Precyzyjny montaż armatury', 'Próby odpływowe']
-      },
-      {
         icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"/><path d="m5 2 5 5"/><path d="M2 13h15"/><path d="M22 20a2 2 0 1 1-4 0c0-1.6 1.7-2.4 2-4 .3 1.6 2 2.4 2 4Z"/></svg>`,
-        title: 'Gładzie, Szpachlowanie & Malowanie',
-        desc: 'Przygotowanie podłoża, gruntowanie, gładzie bezpyłowe, szlifowanie pod światło i precyzyjne malowanie ścian i sufitów.',
-        features: ['Gładkie i równe powierzchnie', 'Trwałe farby zmywalne', 'Zabezpieczenie stolarki i podłóg']
+        title: 'Gładzie Bezpyłowe & Szpachlowanie',
+        desc: 'Przygotowanie podłoża, gruntowanie, gładzie maszynowe/ręczne, szlifowanie pod światło halogenowe.',
+        features: ['Idealnie równe ściany i sufity', 'Bezpyłowe szlifowanie', 'Trwałe zbrojenie łączeń']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/></svg>`,
+        title: 'Precyzyjne Malowanie Wnętrz',
+        desc: 'Malowanie ścian i sufitów, precyzyjne odcięcia kolorystyczne, zabezpieczenie stolarki, podłóg i grzejników.',
+        features: ['Farby lateksowe i zmywalne', 'Równe krycie bez smug', 'Czyste odcięcia taśmami']
       },
       {
         icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/></svg>`,
         title: 'Zabudowy G-K & Sufity Podwieszane',
-        desc: 'Ścianki działowe z płyt gipsowo-kartonowych, sufity podwieszane jedno- i wielopoziomowe, zabudowy rur i wnęk oświetleniowych.',
-        features: ['Izolacja akustyczna wełną', 'Solidna konstrukcja profili', 'Zbrojenie łączeń taśmami']
+        desc: 'Ścianki działowe, sufity podwieszane jedno- i wielopoziomowe, wnęki oświetleniowe LED i maskownice.',
+        features: ['Profile o wysokiej sztywności', 'Izolacja akustyczna wełną', 'Odporność na pęknięcia']
       },
       {
         icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`,
         title: 'Panele Podłogowe & Listwy',
-        desc: 'Układanie paneli laminowanych i winylowych wraz z podkładami wyciszającymi oraz estetyczny montaż listew przypodłogowych.',
-        features: ['Dylatacje obwodowe', 'Ciche podkłady podłogowe', 'Niewidoczne łączenia narożników']
+        desc: 'Montaż paneli laminowanych, winylowych i deski barlineckiej wraz z podkładami wyciszającymi i listwami.',
+        features: ['Dylatacje obwodowe', 'Ciche i ciepłe podkłady', 'Niewidoczne łączenia narożników']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>`,
+        title: 'Układanie Płytek & Glazura',
+        desc: 'Kafelkowanie ścian i podłóg w kuchniach, korytarzach, balkonach, szlifowanie krawędzi pod kątem 45 stopni.',
+        features: ['Precyzyjne docinki', 'Odporne fugi epoksydowe/cementowe', 'Równy poziom']
       },
       {
         icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`,
-        title: 'Drobne Naprawy & Złota Rączka',
-        desc: 'Wymiana baterii, cieknących syfonów, zawiasów, regulacja drzwi, wieszanie szafek, karniszy oraz inne pilne prace domowe.',
-        features: ['Szybki dojazd do klienta', 'Własne narzędzia i osprzęt', 'Wycena na miejscu']
+        title: 'Remonty Kompleksowe "Pod Klucz"',
+        desc: 'Całościowe wykończenia nowych mieszkań deweloperskich oraz remonty generalne domów z rynku wtórnego.',
+        features: ['Jeden odpowiedzialny wykonawca', 'Terminowy harmonogram prac', 'Pomoc w zaopatrzeniu']
+      }
+    ]
+  },
+
+  hydro: {
+    themeClass: 'theme-hydro',
+    metaTitle: 'MFach - Hydraulika, Kotłownie & Wod-Kan | Marcin 695 525 389',
+    image: 'assets/hero_hydro.png',
+    imageAlt: 'Marcin MFach - Hydraulika i Nowoczesne Kotłownie',
+    badgeIcon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`,
+    badgeText: 'Hydraulika, Kotłownie & Instalacje Wod-Kan',
+    title: 'Niezawodna <span class="highlight">hydraulika</span>, pompy i nowoczesne kotłownie',
+    desc: 'Kompleksowe instalacje wodno-kanalizacyjne, montaż pomp ciepła i obiegowych, biały montaż, stelaże podtynkowe oraz szybkie usuwanie awarii i nieszczelności.',
+    trustPoints: [
+      { title: 'Szczelność i bezpieczeństwo', desc: 'Próby ciśnieniowe przed oddaniem instalacji' },
+      { title: 'Nowoczesne kotłownie', desc: 'Pompy ciepła, rozdzielacze i automatyka' },
+      { title: 'Precyzyjny biały montaż', desc: 'Geberity, wanny, kabiny prysznicowe, baterie' },
+      { title: 'Szybkie interwencje', desc: 'Pomoc w awariach i wyciekach na telefon' }
+    ],
+    servicesHeading: 'Oferta Hydrauliczna i Kotłowni',
+    servicesDesc: 'Bezpieczne, trwałe i zgodne ze sztuką instalacje wodno-kanalizacyjne i grzewcze.',
+    services: [
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+        title: 'Nowoczesne Kotłownie & Pompy',
+        desc: 'Montaż pomp ciepła, pomp obiegowych, buforów, grup pompowych oraz estetycznych rozdzielaczy.',
+        features: ['Prawidłowe ciśnienia i przepływy', 'Czyste ułożenie rur i zaworów', 'Optymalizacja grzania']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`,
+        title: 'Instalacje Wodno-Kanalizacyjne',
+        desc: 'Nowe instalacje w domach i mieszkaniach, wymiana starych pionów, podejścia pod kuchnię i łazienkę.',
+        features: ['Bezpieczne rury PEX/PP/miedź', 'Prawidłowe spadki kanalizacji', 'Zawory odcinające wysokiej klasy']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>`,
+        title: 'Biały Montaż & Geberity',
+        desc: 'Montaż stelaży podtynkowych WC, bidetów, wanien, odpływów liniowych, brodzików, umywalek i armatury.',
+        features: ['Precyzyjne uszczelnienia silikonem', 'Stabilne mocowanie ceramiki', 'Próby odpływowe']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="8"/><line x1="3.6" y1="9" x2="8.4" y2="15"/><line x1="20.4" y1="9" x2="15.6" y2="15"/></svg>`,
+        title: 'Ogrzewanie Podłogowe & Grzejniki',
+        desc: 'Rozkładanie pętli podłogówki, podłączanie rozdzielaczy, montaż i wymiana grzejników oraz zaworów.',
+        features: ['Równomierne ogrzewanie', 'Płukanie i próby ciśnieniowe', 'Termostaty grzejnikowe']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`,
+        title: 'Usuwanie Awarii & Nieszczelności',
+        desc: 'Szybkie lokalizowanie wycieków, usuwanie nieszczelności, wymiana uszkodzonych wężyków, zaworów i syfonów.',
+        features: ['Szybki dojazd do klienta', 'Wymiana na miejscu', 'Sprawdzenie szczelności']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+        title: 'Dojazd i Wycena na Miejscu',
+        desc: 'Konsultacje techniczne, dobór urządzeń grzewczych i instalacyjnych oraz bezpłatna wycena na terenie do 50 km od Kętrzyna.',
+        features: ['Rzetelne doradztwo', 'Bez ukrytych kosztów', 'Własny sprzęt i narzędzia']
       }
     ]
   }
 };
 
+// Alias dla kompatybilności wstecznej
+BRANCH_DATA.build = BRANCH_DATA.remont;
+
 // Funkcja aktualizacji widoku na podstawie wybranego profilu
 function setBranch(branchKey, pushHash = true) {
+  if (branchKey === 'build') branchKey = 'remont';
   if (!BRANCH_DATA[branchKey]) return;
   const data = BRANCH_DATA[branchKey];
 
   // 1. Aktualizacja klas na body
-  document.body.classList.remove('theme-agro', 'theme-auto', 'theme-build');
+  document.body.classList.remove('theme-agro', 'theme-auto', 'theme-remont', 'theme-build', 'theme-hydro');
   document.body.classList.add(data.themeClass);
   document.body.setAttribute('data-theme', branchKey);
 
   // 2. Aktualizacja stanu przycisków przełącznika
   document.querySelectorAll('.branch-tab-btn').forEach(btn => {
-    const isTarget = btn.getAttribute('data-branch') === branchKey;
+    const btnBranch = btn.getAttribute('data-branch');
+    const isTarget = btnBranch === branchKey || (branchKey === 'remont' && btnBranch === 'build');
     btn.classList.toggle('active', isTarget);
     btn.setAttribute('aria-pressed', isTarget ? 'true' : 'false');
   });
@@ -303,11 +365,13 @@ function setupSwipeGesture() {
   let touchEndX = 0;
   let touchEndY = 0;
 
-  const branches = ['agro', 'auto', 'build'];
+  const branches = ['agro', 'auto', 'remont', 'hydro'];
   const pageMap = {
     agro: 'rolnictwo.html',
     auto: 'mechanika.html',
-    build: 'budownictwo.html'
+    remont: 'remonty.html',
+    hydro: 'hydraulika.html',
+    build: 'remonty.html'
   };
 
   document.addEventListener('touchstart', (e) => {
@@ -332,7 +396,9 @@ function setupSwipeGesture() {
                           window.location.pathname.endsWith('/') ||
                           !window.location.pathname.includes('.html');
       
-      const currentBranch = document.body.getAttribute('data-theme') || 'agro';
+      let currentBranch = document.body.getAttribute('data-theme') || 'agro';
+      if (currentBranch === 'build') currentBranch = 'remont';
+
       let currentIndex = branches.indexOf(currentBranch);
       if (currentIndex === -1) currentIndex = 0;
 
@@ -377,8 +443,10 @@ document.addEventListener('DOMContentLoaded', () => {
     initialBranch = 'agro';
   } else if (hash === 'auto' || hash === 'samochody' || hash === 'mechanika') {
     initialBranch = 'auto';
-  } else if (hash === 'build' || hash === 'budowlanka' || hash === 'budownictwo' || hash === 'hydraulika') {
-    initialBranch = 'build';
+  } else if (hash === 'remont' || hash === 'remonty' || hash === 'wykonczenia' || hash === 'build' || hash === 'budownictwo' || hash === 'budowlanka') {
+    initialBranch = 'remont';
+  } else if (hash === 'hydro' || hash === 'hydraulika' || hash === 'kotlownia' || hash === 'kotlownie' || hash === 'wodkan') {
+    initialBranch = 'hydro';
   }
 
   setBranch(initialBranch, false);
@@ -388,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Nasłuchiwanie zmian hasha w URL
   window.addEventListener('hashchange', () => {
     const curHash = window.location.hash.replace('#', '').toLowerCase();
-    if (['agro', 'auto', 'build'].includes(curHash)) {
+    if (['agro', 'auto', 'remont', 'hydro', 'build'].includes(curHash)) {
       setBranch(curHash, false);
     }
   });

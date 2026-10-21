@@ -1,4 +1,4 @@
-# MFach - Wizytówka Internetowa (3 Wersje Kolorystyczne)
+# MFach - Wizytówka Internetowa (4 Profile Usługowe)
 
 Nowoczesna, w pełni responsywna wizytówka internetowa dla firmy **MFach**, przygotowana do natychmiastowej publikacji na **GitHub Pages**.
 
@@ -6,10 +6,11 @@ Nowoczesna, w pełni responsywna wizytówka internetowa dla firmy **MFach**, prz
 - **Firma:** MFach
 - **Właściciel / Kontakt:** Marcin
 - **Telefon:** [695 525 389](tel:695525389)
+- **Obszar działania:** Kętrzyn i okolice w promieniu ~50 km (m.in. Mrągowo, Giżycko, Węgorzewo, Reszel, Korsze, Bartoszyce, Biskupiec)
 
 ---
 
-## 🎨 3 Wersje / Dziedziny działalności
+## 🎨 4 Profile / Dziedziny działalności
 
 Wizytówka posiada spójny układ graficzny oraz indywidualną identyfikację kolorystyczną dla każdej dziedziny:
 
@@ -23,18 +24,24 @@ Wizytówka posiada spójny układ graficzny oraz indywidualną identyfikację ko
    - **Zakres:** Bieżące naprawy, wymiana oleju silnikowego i przekładniowego, komplety filtrów, klocki i tarcze hamulcowe, zawieszenie, rozrządy.
    - **Dedykowany plik:** `mechanika.html` lub `index.html#auto`
 
-3. **🏗️ Usługi Ogólnobudowlane, Wykończenia Wnętrz & Hydraulika**
+3. **🏠 Prace Wykończeniowe & Remonty Domów**
    - **Kolorystyka:** Industrial Warm Amber (Ceglasty pomarańcz `#ea580c` / akcent `#fb923c`)
-   - **Zakres:** Remonty mieszkań i domów, instalacje wod-kan, biały montaż, gładzie bezpyłowe, malowanie, zabudowy G-K, glazura i panele.
-   - **Dedykowany plik:** `budownictwo.html` lub `index.html#build`
+   - **Zakres:** Remonty mieszkań i domów, gładzie bezpyłowe, malowanie, zabudowy G-K, panele podłogowe, glazurnictwo.
+   - **Dedykowany plik:** `remonty.html` lub `index.html#remont`
+
+4. **💧 Hydraulika, Kotłownie & Wod-Kan**
+   - **Kolorystyka:** Aqua / Cyan (Błękit instalacyjny `#0891b2` / akcent `#22d3ee`)
+   - **Zakres:** Nowoczesne kotłownie, pompy ciepła, instalacje wod-kan, biały montaż, stelaże Geberit, ogrzewanie podłogowe, usuwanie awarii i nieszczelności.
+   - **Dedykowany plik:** `hydraulika.html` lub `index.html#hydro`
 
 ---
 
 ## ⚡ Główne funkcje strony
-- **Błyskawiczny przełącznik 3-w-1** na stronie głównej (`index.html`) z płynną zmianą motywu kolorystycznego i oferty bez konieczności przeładowywania strony.
-- **Dedykowane podstrony** (`rolnictwo.html`, `mechanika.html`, `budownictwo.html`) – idealne do umieszczenia w osobnych ogłoszeniach OLX, wizytówkach Google Moja Firma czy kodach QR.
+- **Błyskawiczny przełącznik 4-w-1** na stronie głównej (`index.html`) z płynną zmianą motywu kolorystycznego i oferty bez konieczności przeładowywania strony.
+- **Gest Swipe na telefonie:** Przesunięcie palcem w lewo/prawo na smartfonie płynnie zmienia dziedziny.
+- **Interaktywna sekcja obszaru działania:** Wkomponowana mapa (`assets/map.png`) z promieniem obsługi do 50 km od Kętrzyna.
+- **Dedykowane podstrony** (`rolnictwo.html`, `mechanika.html`, `remonty.html`, `hydraulika.html`) – idealne do umieszczenia w osobnych ogłoszeniach OLX, wizytówkach Google czy kodach QR.
 - **Obsługa urządzeń mobilnych (Mobile First)** ze stałym paskiem szybkiego połączenia u dołu ekranu (*"Zadzwoń: 695 525 389"*).
-- **Przyciski szybkiej akcji:** bezpośrednie połączenie (`tel:`), szybki SMS (`sms:`), czat WhatsApp (`wa.me`) oraz kopiowanie numeru do schowka z powiadomieniem.
 - **Czysty kod:** Czysty HTML5, CSS3 (zmienne CSS, Flexbox, Grid) oraz lekki Vanilla JavaScript bez ciężkich zewnętrznych bibliotek (szybkie ładowanie 100/100 w PageSpeed).
 
 ---
@@ -43,16 +50,23 @@ Wizytówka posiada spójny układ graficzny oraz indywidualną identyfikację ko
 
 ```text
 mfach/
-├── index.html           # Główna strona z interaktywnym przełącznikiem branż
+├── index.html           # Główna strona z interaktywnym przełącznikiem 4 branż
 ├── rolnictwo.html       # Dedykowana podstrona: Ciągniki rolnicze (motyw zielony)
 ├── mechanika.html       # Dedykowana podstrona: Mechanika samochodowa (motyw niebieski)
-├── budownictwo.html     # Dedykowana podstrona: Budownictwo & hydraulika (motyw pomarańczowy)
+├── remonty.html         # Dedykowana podstrona: Wykończenia & remonty (motyw pomarańczowy)
+├── hydraulika.html      # Dedykowana podstrona: Hydraulika & kotłownie (motyw turkusowy)
+├── budownictwo.html     # Alias przekierowujący do remonty.html
 ├── css/
 │   └── style.css        # Główny arkusz stylów z paletami kolorów i responsywnością
 ├── js/
-│   └── main.js          # Skrypt obsługi motywów, danych usług i kopiowania telefonu
+│   └── main.js          # Skrypt obsługi motywów, danych usług i gestów swipe
 ├── assets/
-│   └── favicon.svg      # Wektorowa ikonka strony (favicon)
+│   ├── favicon.svg      # Wektorowa ikonka strony (favicon)
+│   ├── hero_agro.png    # Ilustracja 3D: Marcin z ciągnikiem rolniczym
+│   ├── hero_auto.png    # Ilustracja 3D: Marcin z samochodem w warsztacie
+│   ├── hero_remont.png  # Ilustracja 3D: Marcin w wyremontowanym wnętrzu domu
+│   ├── hero_hydro.png   # Ilustracja 3D: Marcin w nowoczesnej kotłowni z pompą
+│   └── map.png          # Mapa obszaru działania firmy (Kętrzyn + 50 km)
 └── README.md            # Dokumentacja i instrukcja wdrożenia
 ```
 

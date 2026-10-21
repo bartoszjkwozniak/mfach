@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydraulika, Kotłownie & Instalacje Wod-Kan - MFach | Marcin 695 525 389</title>
+  <meta name="description" content="MFach - Kompleksowe usługi hydrauliczne, montaż kotłowni, pomp ciepła, instalacje wodno-kanalizacyjne, biały montaż, stelaże Geberit, ogrzewanie podłogowe. Kętrzyn i okolice 50km. Marcin tel. 695 525 389.">
+  <meta name="keywords" content="hydraulik, instalacje wod-kan, montaż pomp ciepła, kotłownie, biały montaż, naprawa wycieków, hydraulik Kętrzyn, MFach Marcin">
+  <meta name="author" content="MFach - Marcin">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-hydro" data-theme="hydro">
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-link" title="MFach - Strona Główna">
+        <div class="brand-logo-icon">M</div>
+        <div class="brand-text">
+          MFach
+          <span class="brand-owner">Marcin • Hydraulika & Kotłownie</span>
+        </div>
+      </a>
+
+      <nav class="branch-switcher-nav" aria-label="Wybór branży">
+        <button type="button" class="branch-tab-btn" data-branch="agro" aria-pressed="false" onclick="window.location.href='rolnictwo.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="17" r="4"/><circle cx="17" cy="17" r="2"/><path d="M7 17h10"/><path d="M9 13h5l3 4"/><path d="M9 13V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/></svg>
+          <span>Ciągniki Rolnicze</span>
+        </button>
+        <button type="button" class="branch-tab-btn" data-branch="auto" aria-pressed="false" onclick="window.location.href='mechanika.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+          <span>Mechanika Aut</span>
+        </button>
+        <button type="button" class="branch-tab-btn" data-branch="remont" aria-pressed="false" onclick="window.location.href='remonty.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Wykończenia & Remonty</span>
+        </button>
+        <button type="button" class="branch-tab-btn active" data-branch="hydro" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          <span>Hydraulika & Kotłownie</span>
+        </button>
+      </nav>
+
+      <a href="tel:695525389" class="nav-cta-btn" title="Zadzwoń do Marcina">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>695 525 389</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div id="heroBadge" class="hero-pill-badge"></div>
+            <h1 id="heroTitle" class="hero-title"></h1>
+            <p id="heroDesc" class="hero-desc"></p>
+
+            <div class="hero-action-group">
+              <a href="tel:695525389" class="btn-primary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Zadzwoń: 695 525 389</span>
+              </a>
+              <a href="sms:695525389" class="btn-secondary">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span>Wyślij SMS</span>
+              </a>
+            </div>
+
+            <div id="trustList" class="trust-bar"></div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img id="heroImage" src="assets/hero_hydro.png" alt="Marcin MFach - Hydraulika i Nowoczesne Kotłownie" class="hero-img" width="600" height="400">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-services" id="uslugi">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-subtitle">Instalacje grzewcze i wodne</span>
+          <h2 id="servicesHeading" class="section-title">Oferta Hydrauliczna i Kotłowni</h2>
+          <p id="servicesDesc" class="section-desc"></p>
+        </div>
+        <div id="servicesGrid" class="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- Pozostałe usługi -->
+    <section class="all-branches-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-subtitle">Dodatkowe dziedziny</span>
+          <h2 class="section-title">Świadczę również inne usługi fachowe</h2>
+        </div>
+        <div class="branches-overview-grid">
+          <a href="rolnictwo.html" class="branch-preview-card card-agro" title="Przejdź do: Serwis Ciągników Rolniczych">
+            <div class="branch-card-media">
+              <img src="assets/hero_agro.png" alt="Ciągniki Rolnicze - MFach" loading="lazy">
+            </div>
+            <span class="branch-badge badge-agro">Agro</span>
+            <h3>Serwis Ciągników Rolniczych</h3>
+            <p>Naprawy silników, hydrauliki siłowej, układów jezdnych, dojazd na pole i do gospodarstwa.</p>
+          </a>
+
+          <a href="mechanika.html" class="branch-preview-card card-auto" title="Przejdź do: Mechanika Samochodowa">
+            <div class="branch-card-media">
+              <img src="assets/hero_auto.png" alt="Mechanika Samochodowa - MFach" loading="lazy">
+            </div>
+            <span class="branch-badge badge-auto">Auto</span>
+            <h3>Mechanika Samochodowa</h3>
+            <p>Bieżące naprawy samochodów, wymiana oleju, filtrów, hamulców, zawieszenia i rozrządów.</p>
+          </a>
+
+          <a href="remonty.html" class="branch-preview-card card-remont" title="Przejdź do: Wykończenia Wnętrz & Remonty">
+            <div class="branch-card-media">
+              <img src="assets/hero_remont.png" alt="Wykończenia Wnętrz & Remonty - MFach" loading="lazy">
+            </div>
+            <span class="branch-badge badge-remont">Remonty</span>
+            <h3>Wykończenia & Remonty Wnętrz</h3>
+            <p>Gładzie bezpyłowe, malowanie, układanie paneli, kafelkowanie, zabudowy G-K, sufity podwieszane.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Obszar Działania (Mapa) -->
+    <section class="section-area" id="obszar">
+      <div class="container">
+        <div class="area-card">
+          <div class="area-info">
+            <span class="section-subtitle">Instalacje hydrauliczne z dojazdem</span>
+            <h2 class="section-title">Kętrzyn i okolice w promieniu ~50 km</h2>
+            <p class="area-desc">
+              Montaż nowoczesnych kotłowni, pomp ciepła, instalacji sanitarnych oraz usuwanie nagłych wycieków na terenie Kętrzyna oraz sąsiadujących miast i gmin w promieniu około 50 km.
+            </p>
+
+            <div class="area-tags">
+              <span class="area-tag">📍 Kętrzyn</span>
+              <span class="area-tag">📍 Mrągowo</span>
+              <span class="area-tag">📍 Giżycko</span>
+              <span class="area-tag">📍 Węgorzewo</span>
+              <span class="area-tag">📍 Reszel</span>
+              <span class="area-tag">📍 Korsze</span>
+              <span class="area-tag">📍 Bartoszyce</span>
+              <span class="area-tag">📍 Biskupiec</span>
+              <span class="area-tag">💧 Domy i kotłownie</span>
+            </div>
+
+            <div class="area-cta">
+              <a href="tel:695525389" class="btn-primary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Zapytaj o instalację / awarię: 695 525 389</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="area-visual">
+            <div class="area-map-wrapper">
+              <img src="assets/map.png" alt="Obszar działania hydraulika - Kętrzyn i okolice 50km" class="area-map-img" loading="lazy">
+              <div class="map-badge-overlay">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+                <span>Obszar obsługi: Kętrzyn + promień 50 km</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">MFach • Marcin (Hydraulika, Kotłownie & Wod-Kan)</div>
+      <div class="footer-contact">
+        <div>Tel: <a href="tel:695525389" class="footer-tel">695 525 389</a></div>
+        <div>Zasięg: Kętrzyn i okolice do 50 km</div>
+        <div>&copy; 2026 MFach</div>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="mobile-call-bar">
+    <a href="tel:695525389" class="mobile-call-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Zadzwoń: 695 525 389</span>
+    </a>
+  </aside>
+
+  <div id="toastNotice" class="toast-notice"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
