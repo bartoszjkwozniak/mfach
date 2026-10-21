@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MFach - Serwis Ciągników Rolniczych, Mechanika, Budownictwo | Marcin 695 525 389</title>
+  <meta name="description" content="MFach - Profesjonalny serwis ciągników rolniczych, mechanika samochodowa (naprawy, wymiana oleju, filtrów) oraz usługi ogólnobudowlane, wykończenia wnętrz i hydraulika. Marcin tel. 695 525 389.">
+  <meta name="keywords" content="MFach, serwis ciągników rolniczych, naprawa ciągników, mechanika samochodowa, wymiana oleju, hydraulika, wykończenia wnętrz, usługi budowlane, Marcin 695525389">
+  <meta name="author" content="MFach - Marcin">
+
+  <!-- OpenGraph / Social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MFach - Usługi Fachowe: Ciągniki, Samochody, Budownictwo">
+  <meta property="og:description" content="Serwis ciągników rolniczych, mechanika samochodowa oraz kompleksowe wykończenia wnętrz i hydraulika. Zadzwoń: 695 525 389.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-agro" data-theme="agro">
+
+  <!-- ================= GÓRNY PASEK NAWIGACJI & PRZEŁĄCZNIK ================= -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-link" title="MFach - Strona Główna">
+        <div class="brand-logo-icon">M</div>
+        <div class="brand-text">
+          MFach
+          <span class="brand-owner">Marcin • Usługi</span>
+        </div>
+      </a>
+
+      <!-- Przełącznik 3 dziedzin z różną kolorystyką -->
+      <nav class="branch-switcher-nav" aria-label="Wybór branży">
+        <button type="button" class="branch-tab-btn active" data-branch="agro" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="17" r="4"/><circle cx="17" cy="17" r="2"/><path d="M7 17h10"/><path d="M9 13h5l3 4"/><path d="M9 13V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/></svg>
+          <span>Ciągniki Rolnicze</span>
+        </button>
+        <button type="button" class="branch-tab-btn" data-branch="auto" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+          <span>Mechanika Aut</span>
+        </button>
+        <button type="button" class="branch-tab-btn" data-branch="build" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Budownictwo & Hydraulika</span>
+        </button>
+      </nav>
+
+      <!-- Szybki kontakt w nagłówku -->
+      <a href="tel:695525389" class="nav-cta-btn" title="Zadzwoń do Marcina">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>695 525 389</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= SEKCJA GŁÓWNA HERO ================= -->
+    <section class="hero-section">
+      <div class="container">
+        <div id="heroBadge" class="hero-pill-badge">
+          <!-- Dynamicznie wypełniane przez js/main.js -->
+        </div>
+
+        <h1 id="heroTitle" class="hero-title">
+          <!-- Dynamicznie wypełniane przez js/main.js -->
+        </h1>
+
+        <p id="heroDesc" class="hero-desc">
+          <!-- Dynamicznie wypełniane przez js/main.js -->
+        </p>
+
+        <div class="hero-action-group">
+          <a href="tel:695525389" class="btn-primary">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Zadzwoń: 695 525 389</span>
+          </a>
+
+          <button type="button" class="btn-secondary js-copy-phone" title="Kliknij, aby skopiować numer">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Kopiuj numer</span>
+          </button>
+
+          <a href="sms:695525389" class="btn-secondary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Wyślij SMS</span>
+          </a>
+        </div>
+
+        <!-- Pasek atutów / zaufania -->
+        <div id="trustList" class="trust-bar">
+          <!-- Dynamicznie wypełniane przez js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEKCJA USŁUG ================= -->
+    <section class="section-services" id="uslugi">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-subtitle">Zakres prac</span>
+          <h2 id="servicesHeading" class="section-title">Oferta Usługowa</h2>
+          <p id="servicesDesc" class="section-desc">Profesjonalne wykonanie, sprawdzone części i uczciwe doradztwo.</p>
+        </div>
+
+        <div id="servicesGrid" class="services-grid">
+          <!-- Dynamicznie generowane karty usług przez js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRZEGLĄD 3 PROFILI MFach ================= -->
+    <section class="all-branches-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-subtitle">Pełna wszechstronność</span>
+          <h2 class="section-title">Wszystkie Dziedziny Działalności MFach</h2>
+          <p class="section-desc">Wybierz interesującą Cię branżę lub przełącz motyw kolorystyczny u góry strony.</p>
+        </div>
+
+        <div class="branches-overview-grid">
+          <!-- Wersja 1: Ciągniki (Zielony) -->
+          <div class="branch-preview-card card-agro">
+            <span class="branch-badge badge-agro">Wersja Zielona • Agro</span>
+            <h3>Serwis Ciągników Rolniczych</h3>
+            <p>Naprawy silników, hydrauliki siłowej, układów jezdnych, dojazd na pole i do gospodarstwa w sezonie.</p>
+            <a href="rolnictwo.html" class="branch-link-btn" title="Otwórz wersję dla rolnictwa">
+              <span>Zobacz dedykowaną stronę</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+
+          <!-- Wersja 2: Samochody (Niebieski) -->
+          <div class="branch-preview-card card-auto">
+            <span class="branch-badge badge-auto">Wersja Niebieska • Auto</span>
+            <h3>Mechanika Samochodowa</h3>
+            <p>Bieżące naprawy aut osobowych i dostawczych, wymiana oleju, filtrów, hamulce, zawieszenie, rozrządy.</p>
+            <a href="mechanika.html" class="branch-link-btn" title="Otwórz wersję dla mechaniki samochodowej">
+              <span>Zobacz dedykowaną stronę</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+
+          <!-- Wersja 3: Budownictwo (Ceglasty Pomarańcz) -->
+          <div class="branch-preview-card card-build">
+            <span class="branch-badge badge-build">Wersja Pomarańczowa • Budownictwo</span>
+            <h3>Wykończenia & Hydraulika</h3>
+            <p>Kompleksowe remonty, instalacje wodno-kanalizacyjne, gładzie, malowanie, płytki, panele i biały montaż.</p>
+            <a href="budownictwo.html" class="branch-link-btn" title="Otwórz wersję dla budownictwa">
+              <span>Zobacz dedykowaną stronę</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEKCJA KONTAKTOWA & O MNIE ================= -->
+    <section class="section-about" id="kontakt">
+      <div class="container">
+        <div class="about-card">
+          <div class="about-info">
+            <h2>Fachowe podejście do każdego zlecenia</h2>
+            <p>
+              Nazywam się <strong>Marcin</strong> i prowadzę firmę <strong>MFach</strong>. Łączę rzetelne doświadczenie mechaniczne i budowlane. Wiem, jak kluczowy jest sprawny ciągnik podczas prac polowych, bezpieczny samochód w trasie oraz solidnie wykonane instalacje w domu.
+            </p>
+            
+            <div class="about-perks">
+              <div class="perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dojazd do klienta / na pole</span>
+              </div>
+              <div class="perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Szybka i uczciwa wycena</span>
+              </div>
+              <div class="perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Sprawdzone narzędzia i części</span>
+              </div>
+              <div class="perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Gwarancja solidnego wykonania</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.9rem; margin-bottom: 0;">
+              Masz pytania lub potrzebujesz pilnej naprawy? Zadzwoń lub napisz wiadomość – chętnie pomogę i ustalimy dogodny termin.
+            </p>
+          </div>
+
+          <div class="about-contact-box">
+            <div class="contact-avatar-box">M</div>
+            <div class="contact-name">Marcin • MFach</div>
+            <div class="contact-role">Bezpośredni kontakt wykonawcy</div>
+
+            <a href="tel:695525389" class="phone-big-link" title="Zadzwoń teraz">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>695 525 389</span>
+            </a>
+
+            <div class="quick-action-links">
+              <button type="button" class="quick-action-btn js-copy-phone">Kopiuj numer</button>
+              <a href="sms:695525389" class="quick-action-btn">Napisz SMS</a>
+              <a href="https://wa.me/48695525389" target="_blank" rel="noopener noreferrer" class="quick-action-btn">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= STOPKA ================= -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        MFach • Marcin
+        <div style="font-size: 0.8rem; font-weight: 400; color: var(--text-dim); margin-top: 0.25rem;">
+          Ciągniki Rolnicze • Mechanika Samochodowa • Budownictwo & Hydraulika
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <div>Telefon: <a href="tel:695525389" class="footer-tel">695 525 389</a></div>
+        <div>Dojazd do klienta / w teren</div>
+        <div>&copy; 2026 MFach. Wszelkie prawa zastrzeżone.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= DOLNY PRZYCISK MOBILNY (Sticky Call) ================= -->
+  <aside class="mobile-call-bar" aria-label="Szybki kontakt telefoniczny">
+    <a href="tel:695525389" class="mobile-call-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Zadzwoń: 695 525 389</span>
+    </a>
+  </aside>
+
+  <!-- Dymek Toast po skopiowaniu -->
+  <div id="toastNotice" class="toast-notice" role="alert" aria-live="polite"></div>
+
+  <!-- Skrypt główny -->
+  <script src="js/main.js"></script>
+</body>
+</html>
