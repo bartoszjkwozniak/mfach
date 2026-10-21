@@ -296,6 +296,68 @@ function setupPhoneCopy() {
   });
 }
 
+// Obsługa gestu przesunięcia palcem (Touch Swipe) na telefonie
+function setupSwipeGesture() {
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchEndX = 0;
+  let touchEndY = 0;
+
+  const branches = ['agro', 'auto', 'build'];
+  const pageMap = {
+    agro: 'rolnictwo.html',
+    auto: 'mechanika.html',
+    build: 'budownictwo.html'
+  };
+
+  document.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    const diffX = touchEndX - touchStartX;
+    const diffY = touchEndY - touchStartY;
+
+    // Sprawdzamy czy to wyraźny gest poziomy (min. 50px) i nie jest to scroll pionowy
+    if (Math.abs(diffX) >= 50 && Math.abs(diffX) > Math.abs(diffY) * 1.3) {
+      const isIndexPage = window.location.pathname.endsWith('index.html') || 
+                          window.location.pathname === '/' || 
+                          window.location.pathname.endsWith('/') ||
+                          !window.location.pathname.includes('.html');
+      
+      const currentBranch = document.body.getAttribute('data-theme') || 'agro';
+      let currentIndex = branches.indexOf(currentBranch);
+      if (currentIndex === -1) currentIndex = 0;
+
+      let targetIndex;
+      if (diffX < 0) {
+        // Przesunięcie w lewo (swipe left) -> następna branża
+        targetIndex = (currentIndex + 1) % branches.length;
+      } else {
+        // Przesunięcie w prawo (swipe right) -> poprzednia branża
+        targetIndex = (currentIndex - 1 + branches.length) % branches.length;
+      }
+
+      const targetBranch = branches[targetIndex];
+
+      if (isIndexPage) {
+        // Na stronie głównej dynamiczne przełączenie motywu i treści
+        setBranch(targetBranch, true);
+      } else {
+        // Na podstronach przejście do odpowiedniej strony
+        window.location.href = pageMap[targetBranch];
+      }
+    }
+  }
+}
+
 // Inicjalizacja przy ładowaniu strony
 document.addEventListener('DOMContentLoaded', () => {
   // Przypisanie zdarzeń do przycisków przełącznika
@@ -321,6 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setBranch(initialBranch, false);
   setupPhoneCopy();
+  setupSwipeGesture();
 
   // Nasłuchiwanie zmian hasha w URL
   window.addEventListener('hashchange', () => {
