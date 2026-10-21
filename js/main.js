@@ -8,6 +8,8 @@ const BRANCH_DATA = {
   agro: {
     themeClass: 'theme-agro',
     metaTitle: 'MFach - Serwis Ciągników Rolniczych | Marcin 695 525 389',
+    image: 'assets/hero_agro.png',
+    imageAlt: 'Marcin MFach - Serwis Ciągników Rolniczych',
     badgeIcon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="17" r="4"/><circle cx="17" cy="17" r="2"/><path d="M7 17h10"/><path d="M9 13h5l3 4"/><path d="M9 13V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/><path d="M14 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/></svg>`,
     badgeText: 'Ciągniki Rolnicze i Maszyny Agro',
     title: 'Niezawodny serwis i naprawa <span class="highlight">ciągników rolniczych</span>',
@@ -63,6 +65,8 @@ const BRANCH_DATA = {
   auto: {
     themeClass: 'theme-auto',
     metaTitle: 'MFach - Mechanika Samochodowa | Marcin 695 525 389',
+    image: 'assets/hero_auto.png',
+    imageAlt: 'Marcin MFach - Mechanika Samochodowa',
     badgeIcon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>`,
     badgeText: 'Mechanika Samochodowa & Eksploatacja',
     title: 'Solidna i uczciwa <span class="highlight">mechanika samochodowa</span>',
@@ -118,6 +122,8 @@ const BRANCH_DATA = {
   build: {
     themeClass: 'theme-build',
     metaTitle: 'MFach - Budownictwo, Wykończenia & Hydraulika | Marcin 695 525 389',
+    image: 'assets/hero_build.png',
+    imageAlt: 'Marcin MFach - Budownictwo, Wykończenia Wnętrz i Hydraulika',
     badgeIcon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
     badgeText: 'Usługi Ogólnobudowlane, Wykończenia Wnętrz & Hydraulika',
     title: 'Solidne <span class="highlight">wykończenia wnętrz</span> i instalacje hydrauliczne',
@@ -202,6 +208,13 @@ function setBranch(branchKey, pushHash = true) {
   const heroDesc = document.getElementById('heroDesc');
   if (heroDesc) {
     heroDesc.innerHTML = data.desc;
+  }
+
+  // Aktualizacja ilustracji bohatera (Marcin & maszyna/obiekt)
+  const heroImage = document.getElementById('heroImage');
+  if (heroImage && data.image) {
+    heroImage.src = data.image;
+    heroImage.alt = data.imageAlt || 'MFach Marcin';
   }
 
   // 4. Aktualizacja punktów zaufania
