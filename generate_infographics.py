@@ -29,6 +29,19 @@ def make_rounded_image(img, target_size, radius):
     rounded.paste(cropped.convert('RGBA'), (0, 0), mask)
     return rounded
 
+def draw_map_pin(draw, x, y, h=22, color=(34, 211, 238)):
+    # Crisp vector map pin (avoids missing emoji tofu boxes)
+    r = h * 0.36
+    cx = x + r
+    cy = y + r
+    draw.ellipse((cx - r, cy - r, cx + r, cy + r), fill=color)
+    tip = (cx, y + h)
+    p_left = (cx - r * 0.82, cy + r * 0.38)
+    p_right = (cx + r * 0.82, cy + r * 0.38)
+    draw.polygon([p_left, tip, p_right], fill=color)
+    dot_r = r * 0.38
+    draw.ellipse((cx - dot_r, cy - dot_r, cx + dot_r, cy + dot_r), fill=(11, 15, 25))
+
 def generate_banner():
     width, height = 1920, 1080
     bg = Image.new('RGB', (width, height), (11, 15, 25))
@@ -76,7 +89,8 @@ def generate_banner():
         draw.ellipse((1168, 63, 1220, 115), outline=(34, 211, 238), width=2)
         draw.text((1230, 74), "OBSZAR DZIAŁANIA: KĘTRZYN I OKOLICE (DO 50 KM)", font=font_badge, fill=(34, 211, 238))
     else:
-        draw.text((1190, 72), "📍 OBSZAR DZIAŁANIA: KĘTRZYN I OKOLICE (DO 50 KM)", font=font_badge, fill=(34, 211, 238))
+        draw_map_pin(draw, 1180, 75, h=24, color=(34, 211, 238))
+        draw.text((1215, 74), "OBSZAR DZIAŁANIA: KĘTRZYN I OKOLICE (DO 50 KM)", font=font_badge, fill=(34, 211, 238))
     
     # 2. Main 4 Cards Section
     cards = [
@@ -162,7 +176,7 @@ def generate_banner():
     call_btn_box = (1260, 945, 1820, 1015)
     draw.rounded_rectangle(call_btn_box, radius=35, fill=(22, 163, 74), outline=(74, 222, 128), width=2)
     
-    call_txt = "📞 ZADZWOŃ: 695 525 389"
+    call_txt = "ZADZWOŃ: 695 525 389"
     tw = draw.textlength(call_txt, font=font_phone)
     call_tx = 1260 + (560 - tw) / 2
     draw.text((call_tx, 958), call_txt, font=font_phone, fill=(255, 255, 255))
@@ -327,14 +341,19 @@ def generate_circle_quad():
     pill_box = (center_x - pill_w // 2, center_y - 15, center_x + pill_w // 2, center_y - 15 + pill_h)
     draw.rounded_rectangle(pill_box, radius=29, fill=(22, 163, 74), outline=(74, 222, 128), width=2)
     
-    txt_phone = "📞 695 525 389"
+    txt_phone = "TEL. 695 525 389"
     w_phone = draw.textlength(txt_phone, font=font_center_phone)
     draw.text((center_x - w_phone / 2, center_y - 11), txt_phone, font=font_center_phone, fill=(255, 255, 255))
     
-    # Area Badge in Center
-    txt_area = "📍 KĘTRZYN I OKOLICE (DO 50 KM)"
+    # Area Badge in Center with crisp vector map pin
+    txt_area = "KĘTRZYN I OKOLICE (DO 50 KM)"
     w_area = draw.textlength(txt_area, font=font_badge_bold)
-    draw.text((center_x - w_area / 2, center_y + 68), txt_area, font=font_badge_bold, fill=(34, 211, 238))
+    pin_w = 16
+    pin_h = 22
+    total_w = pin_w + 10 + w_area
+    start_x = center_x - total_w / 2
+    draw_map_pin(draw, start_x, center_y + 68, h=pin_h, color=(34, 211, 238))
+    draw.text((start_x + pin_w + 10, center_y + 68), txt_area, font=font_badge_bold, fill=(34, 211, 238))
     
     bg.save("assets/infographic_circle.png", quality=95)
     print("Circle infographic generated successfully!")
