@@ -331,7 +331,7 @@ def generate_circle_quad():
     w_logo = draw.textlength(txt_logo, font=font_center_title)
     draw.text((center_x - w_logo / 2, center_y - 118), txt_logo, font=font_center_title, fill=(255, 255, 255))
     
-    txt_sub = "MARCIN • USŁUGI MOBILNE"
+    txt_sub = "MARCIN • USŁUGI FACHOWE"
     w_sub = draw.textlength(txt_sub, font=font_center_sub)
     draw.text((center_x - w_sub / 2, center_y - 65), txt_sub, font=font_center_sub, fill=(226, 232, 240))
     
