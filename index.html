@@ -69,127 +69,140 @@
   </header>
 
   <main>
-    <!-- ================= SEKCJA GŁÓWNA HERO ================= -->
-    <section class="hero-section">
+    <!-- ================= CENTRUM POWITALNE: WSZYSTKIE 5 BRANŻ MFACH ================= -->
+    <section class="hub-intro-section" aria-label="Wybór specjalizacji MFach">
       <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div id="heroBadge" class="hero-pill-badge">
-              <!-- Dynamicznie wypełniane przez js/main.js -->
-            </div>
-
-            <h1 id="heroTitle" class="hero-title">
-              <!-- Dynamicznie wypełniane przez js/main.js -->
-            </h1>
-
-            <p id="heroDesc" class="hero-desc">
-              <!-- Dynamicznie wypełniane przez js/main.js -->
-            </p>
-
-            <div class="hero-action-group">
-              <a href="tel:695525389" class="btn-primary">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <span>Zadzwoń: 695 525 389</span>
-              </a>
-              <a href="sms:695525389" class="btn-secondary">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                <span>Wyślij SMS</span>
-              </a>
-            </div>
-
-            <!-- Pasek atutów / zaufania -->
-            <div id="trustList" class="trust-bar">
-              <!-- Dynamicznie wypełniane przez js/main.js -->
-            </div>
+        <div class="hub-header">
+          <div class="hub-welcome-badge">
+            <span>📍 Kętrzyn i okolice w promieniu ~50 km • Bezpośredni dojazd do klienta</span>
           </div>
-
-          <!-- Prawa kolumna: Ilustracja maskotki Marcina -->
-          <div class="hero-visual">
-            <div class="hero-image-wrapper">
-              <img id="heroImage" src="assets/hero_agro.png" alt="Marcin MFach - Serwis Ciągników Rolniczych" class="hero-img" width="600" height="400">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SEKCJA USŁUG ================= -->
-    <section class="section-services" id="uslugi">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-subtitle">Zakres prac</span>
-          <h2 id="servicesHeading" class="section-title">Oferta Usługowa</h2>
-          <p id="servicesDesc" class="section-desc">Profesjonalne wykonanie, sprawdzone części i uczciwe doradztwo.</p>
+          <h1 class="hub-title">
+            Jeden sprawdzony fachowiec – <span class="highlight">5 konkretnych specjalizacji</span>
+          </h1>
+          <p class="hub-subtitle">
+            Kliknij wybraną branżę poniżej, aby wyświetlić szczegółowy zakres usług, lub zadzwoń bezpośrednio: <a href="tel:695525389" style="color: var(--accent); font-weight: 700;">695 525 389</a>
+          </p>
         </div>
 
-        <div id="servicesGrid" class="services-grid">
-          <!-- Dynamicznie generowane karty usług przez js/main.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PRZEGLĄD 3 PROFILI MFach ================= -->
-    <section class="all-branches-section">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-subtitle">Pełna wszechstronność</span>
-          <h2 class="section-title">Wszystkie Dziedziny Działalności MFach</h2>
-          <p class="section-desc">Wybierz interesującą Cię branżę lub przełącz motyw kolorystyczny u góry strony.</p>
-        </div>
-
-        <div class="branches-overview-grid">
-          <!-- Ciągniki (Zielony) -->
-          <a href="rolnictwo.html" class="branch-preview-card card-agro" title="Przejdź do: Serwis Ciągników Rolniczych">
+        <div class="branches-overview-grid hub-grid">
+          <!-- 1. Ciągniki Rolnicze (Zielony) -->
+          <a href="rolnictwo.html" class="branch-preview-card card-agro active-branch-card" data-branch="agro" title="Pokaż ofertę: Serwis Ciągników Rolniczych">
             <div class="branch-card-media">
-              <img src="assets/hero_agro.png" alt="Ciągniki Rolnicze - MFach" loading="lazy">
+              <img src="assets/hero_agro.png" alt="Ciągniki Rolnicze - MFach">
             </div>
-            <span class="branch-badge badge-agro">Agro</span>
-            <h3>Serwis Ciągników Rolniczych</h3>
-            <p>Naprawy silników, hydrauliki siłowej, mostów, pneumatyki, szybki dojazd na pole i do gospodarstwa.</p>
+            <span class="branch-badge badge-agro">1. Rolnictwo & Agro</span>
+            <h3>Ciągniki Rolnicze</h3>
+            <p>Naprawy silników, skrzyń, hydrauliki siłowej, pneumatyki oraz mobilny serwis na polu i w gospodarstwie.</p>
+            <span class="branch-card-action">✓ Aktywny widok poniżej</span>
           </a>
 
-          <!-- Samochody (Niebieski) -->
-          <a href="mechanika.html" class="branch-preview-card card-auto" title="Przejdź do: Mechanika Samochodowa">
+          <!-- 2. Mechanika Samochodowa (Niebieski) -->
+          <a href="mechanika.html" class="branch-preview-card card-auto" data-branch="auto" title="Pokaż ofertę: Mechanika Samochodowa">
             <div class="branch-card-media">
-              <img src="assets/hero_auto.png" alt="Mechanika Samochodowa - MFach" loading="lazy">
+              <img src="assets/hero_auto.png" alt="Mechanika Samochodowa - MFach">
             </div>
-            <span class="branch-badge badge-auto">Auto</span>
+            <span class="branch-badge badge-auto">2. Motoryzacja</span>
             <h3>Mechanika Samochodowa</h3>
-            <p>Bieżące naprawy, wymiana oleju, filtrów, klocków, tarcz hamulcowych, zawieszenie, rozrządy i diagnostyka.</p>
+            <p>Bieżące naprawy, wymiana oleju, filtrów, hamulce, zawieszenie, rozrządy i diagnostyka komputerowa.</p>
+            <span class="branch-card-action">Zobacz ofertę ↓</span>
           </a>
 
-          <!-- Wykończenia Wnętrz & Remonty (Ceglasty Pomarańcz) -->
-          <a href="remonty.html" class="branch-preview-card card-remont" title="Przejdź do: Wykończenia Wnętrz & Remonty">
+          <!-- 3. Wykończenia Wnętrz & Remonty (Ceglasty Pomarańcz) -->
+          <a href="remonty.html" class="branch-preview-card card-remont" data-branch="remont" title="Pokaż ofertę: Wykończenia Wnętrz & Remonty">
             <div class="branch-card-media">
-              <img src="assets/hero_remont.png" alt="Wykończenia Wnętrz & Remonty - MFach" loading="lazy">
+              <img src="assets/hero_remont.png" alt="Wykończenia Wnętrz & Remonty - MFach">
             </div>
-            <span class="branch-badge badge-remont">Remonty</span>
-            <h3>Wykończenia & Remonty Wnętrz</h3>
-            <p>Gładzie bezpyłowe, malowanie, układanie paneli, kafelkowanie, zabudowy G-K, sufity podwieszane.</p>
+            <span class="branch-badge badge-remont">3. Budownictwo</span>
+            <h3>Wykończenia & Remonty</h3>
+            <p>Gładzie bezpyłowe, malowanie, układanie paneli, kafelkowanie, zabudowy G-K i remonty pod klucz.</p>
+            <span class="branch-card-action">Zobacz ofertę ↓</span>
           </a>
 
-          <!-- Hydraulika & Kotłownie (Turkus / Cyjan) -->
-          <a href="hydraulika.html" class="branch-preview-card card-hydro" title="Przejdź do: Hydraulika & Kotłownie">
+          <!-- 4. Hydraulika & Kotłownie (Turkus / Cyjan) -->
+          <a href="hydraulika.html" class="branch-preview-card card-hydro" data-branch="hydro" title="Pokaż ofertę: Hydraulika & Kotłownie">
             <div class="branch-card-media">
-              <img src="assets/hero_hydro.png" alt="Hydraulika & Kotłownie - MFach" loading="lazy">
+              <img src="assets/hero_hydro.png" alt="Hydraulika & Kotłownie - MFach">
             </div>
-            <span class="branch-badge badge-hydro">Hydraulika</span>
+            <span class="branch-badge badge-hydro">4. Instalacje</span>
             <h3>Hydraulika & Kotłownie</h3>
-            <p>Nowoczesne kotłownie, pompy ciepła, instalacje wod-kan, biały montaż, stelaże Geberit i usuwanie awarii.</p>
+            <p>Nowoczesne kotłownie, pompy ciepła, instalacje wod-kan, podłogówka, biały montaż i usuwanie awarii.</p>
+            <span class="branch-card-action">Zobacz ofertę ↓</span>
           </a>
 
-          <!-- Spawalnictwo & Ślusarstwo (Ognisty Karmin) -->
-          <a href="spawalnictwo.html" class="branch-preview-card card-spaw" title="Przejdź do: Spawalnictwo & Ślusarstwo">
+          <!-- 5. Spawalnictwo & Ślusarstwo (Ognisty Karmin) -->
+          <a href="spawalnictwo.html" class="branch-preview-card card-spaw" data-branch="spaw" title="Pokaż ofertę: Spawalnictwo & Ślusarstwo">
             <div class="branch-card-media">
-              <img src="assets/hero_spawacz.png" alt="Spawalnictwo & Ślusarstwo - MFach" loading="lazy">
+              <img src="assets/hero_spawacz.png" alt="Spawalnictwo & Ślusarstwo - MFach">
             </div>
-            <span class="branch-badge badge-spaw">Spawalnictwo</span>
+            <span class="branch-badge badge-spaw">5. Prace Stalowe</span>
             <h3>Spawalnictwo & Ślusarstwo</h3>
-            <p>Spawanie metodami MIG/MAG i TIG, naprawa maszyn rolniczych, konstrukcje stalowe, bramy, wiaty i dojazd w teren.</p>
+            <p>Spawanie MIG/MAG i TIG, naprawa pękniętych maszyn, konstrukcje stalowe, bramy, wiaty i dojazd w teren.</p>
+            <span class="branch-card-action">Zobacz ofertę ↓</span>
           </a>
         </div>
       </div>
     </section>
+
+    <!-- ================= SZCZEGÓŁY WYBRANEJ BRANŻY (HERO + USŁUGI) ================= -->
+    <div id="szczegoly-branzy">
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div id="heroBadge" class="hero-pill-badge">
+                <!-- Dynamicznie wypełniane przez js/main.js -->
+              </div>
+
+              <h2 id="heroTitle" class="hero-title">
+                <!-- Dynamicznie wypełniane przez js/main.js -->
+              </h2>
+
+              <p id="heroDesc" class="hero-desc">
+                <!-- Dynamicznie wypełniane przez js/main.js -->
+              </p>
+
+              <div class="hero-action-group">
+                <a href="tel:695525389" class="btn-primary">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>Zadzwoń: 695 525 389</span>
+                </a>
+                <a href="sms:695525389" class="btn-secondary">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  <span>Wyślij SMS</span>
+                </a>
+              </div>
+
+              <!-- Pasek atutów / zaufania -->
+              <div id="trustList" class="trust-bar">
+                <!-- Dynamicznie wypełniane przez js/main.js -->
+              </div>
+            </div>
+
+            <!-- Prawa kolumna: Ilustracja maskotki Marcina -->
+            <div class="hero-visual">
+              <div class="hero-image-wrapper">
+                <img id="heroImage" src="assets/hero_agro.png" alt="Marcin MFach - Serwis Ciągników Rolniczych" class="hero-img" width="600" height="400">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SEKCJA USŁUG ================= -->
+      <section class="section-services" id="uslugi">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-subtitle">Szczegółowy zakres prac</span>
+            <h2 id="servicesHeading" class="section-title">Oferta Usługowa</h2>
+            <p id="servicesDesc" class="section-desc">Profesjonalne wykonanie, sprawdzone części i uczciwe doradztwo.</p>
+          </div>
+
+          <div id="servicesGrid" class="services-grid">
+            <!-- Dynamicznie generowane karty usług przez js/main.js -->
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- ================= OBSZAR DZIAŁANIA (MAPA) ================= -->
     <section class="section-area" id="obszar">

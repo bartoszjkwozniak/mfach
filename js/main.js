@@ -305,12 +305,22 @@ function setBranch(branchKey, pushHash = true) {
   document.body.classList.add(data.themeClass);
   document.body.setAttribute('data-theme', branchKey);
 
-  // 2. Aktualizacja stanu przycisków przełącznika
+  // 2. Aktualizacja stanu przycisków przełącznika oraz kart w Hubie na stronie głównej
   document.querySelectorAll('.branch-tab-btn').forEach(btn => {
     const btnBranch = btn.getAttribute('data-branch');
     const isTarget = btnBranch === branchKey || (branchKey === 'remont' && btnBranch === 'build');
     btn.classList.toggle('active', isTarget);
     btn.setAttribute('aria-pressed', isTarget ? 'true' : 'false');
+  });
+
+  document.querySelectorAll('.branch-preview-card[data-branch]').forEach(card => {
+    const cardBranch = card.getAttribute('data-branch');
+    const isTarget = cardBranch === branchKey || (branchKey === 'remont' && cardBranch === 'build');
+    card.classList.toggle('active-branch-card', isTarget);
+    const actionEl = card.querySelector('.branch-card-action');
+    if (actionEl) {
+      actionEl.textContent = isTarget ? '✓ Aktywny widok poniżej' : 'Zobacz ofertę ↓';
+    }
   });
 
   // 3. Aktualizacja zawartości Hero (jeśli istnieje na danej stronie)
@@ -484,11 +494,29 @@ function setupSwipeGesture() {
 
 // Inicjalizacja przy ładowaniu strony
 document.addEventListener('DOMContentLoaded', () => {
-  // Przypisanie zdarzeń do przycisków przełącznika
+  const detailsSection = document.getElementById('szczegoly-branzy');
+
+  // Przypisanie zdarzeń do przycisków przełącznika w nagłówku
   document.querySelectorAll('.branch-tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const branch = btn.getAttribute('data-branch');
       setBranch(branch, true);
+      if (detailsSection) {
+        detailsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Przypisanie zdarzeń do kart w górnym Hubie na stronie głównej
+  document.querySelectorAll('.hub-grid .branch-preview-card[data-branch]').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+      e.preventDefault();
+      const branch = card.getAttribute('data-branch');
+      setBranch(branch, true);
+      if (detailsSection) {
+        detailsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 
