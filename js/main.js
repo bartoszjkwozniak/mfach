@@ -231,6 +231,63 @@ const BRANCH_DATA = {
         features: ['Rzetelne doradztwo', 'Bez ukrytych kosztów', 'Własny sprzęt i narzędzia']
       }
     ]
+  },
+
+  spaw: {
+    themeClass: 'theme-spaw',
+    metaTitle: 'MFach - Spawalnictwo & Ślusarstwo | Marcin 695 525 389',
+    image: 'assets/hero_spawacz.png',
+    imageAlt: 'Marcin MFach - Spawalnictwo i Konstrukcje Stalowe',
+    badgeIcon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`,
+    badgeText: 'Spawalnictwo & Ślusarstwo',
+    title: 'Precyzyjne <span class="highlight">spawalnictwo</span>, konstrukcje stalowe i ślusarstwo',
+    desc: 'Spawanie metodami MIG/MAG i TIG, naprawa pękniętych elementów maszyn rolniczych i aut, wykonywanie konstrukcji stalowych, bram, wiat, ogrodzeń oraz spawanie mobilne u klienta.',
+    trustPoints: [
+      { title: 'Trwałe i estetyczne spoiny', desc: 'Wytrzymałość spawów na obciążenia i pęknięcia' },
+      { title: 'Spawanie mobilne z dojazdem', desc: 'Własny agregat i sprzęt do pracy w terenie' },
+      { title: 'Naprawa pękniętych maszyn', desc: 'Ramy ciągników, pługi, łyżki, przyczepy' },
+      { title: 'Indywidualne konstrukcje', desc: 'Bramy, furtki, wiaty, balustrady na wymiar' }
+    ],
+    servicesHeading: 'Oferta Spawalnicza i Ślusarska',
+    servicesDesc: 'Solidne łączenie metali, renowacja konstrukcji stalowych i dorabianie elementów na zamówienie.',
+    services: [
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`,
+        title: 'Spawanie MIG / MAG & TIG',
+        desc: 'Spawanie konstrukcyjne stali czarnej, profili, rur oraz precyzyjne spawanie stali kwasoodpornej i drobnych elementów.',
+        features: ['Wysoka estetyka spoin', 'Głęboki przetop i wytrzymałość', 'Usuwanie żużlu i szlifowanie']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="7" cy="17" r="4"/><circle cx="17" cy="17" r="2"/><path d="M7 17h10"/><path d="M9 13h5l3 4"/></svg>`,
+        title: 'Naprawa Maszyn Rolniczych & Budowlanych',
+        desc: 'Wzmacnianie i spawanie pękniętych ram ciągników, ramion ładowaczy, łyżek, pługów, bron, przyczep i kultywatorów.',
+        features: ['Wstawianie wzmocnień i nakładek', 'Odtwarzanie urwanych mocowań', 'Szybki dojazd w czasie prac polowych']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>`,
+        title: 'Bramy, Furtki & Ogrodzenia',
+        desc: 'Wykonywanie na wymiar bram przesuwnych, dwuskrzydłowych, furtek oraz nowoczesnych przęseł palisadowych i żaluzjowych.',
+        features: ['Stabilne profile stalowe', 'Przygotowanie pod automatykę', 'Zabezpieczenie antykorozyjne']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M10 9h4v4h-4z"/></svg>`,
+        title: 'Konstrukcje Stalowe & Wiaty',
+        desc: 'Budowa wiat garażowych, rolniczych, zadaszeń, regałów magazynowych, podestów technicznych i antresol.',
+        features: ['Solidne węzły spawalnicze', 'Konstrukcje skręcane lub spawane', 'Wymiary pod potrzeby klienta']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M6 3v18M18 3v18M6 8h12M6 16h12"/></svg>`,
+        title: 'Balustrady & Schody Metalowe',
+        desc: 'Schody loftowe, schody zewnętrzne, poręcze i balustrady tarasowe oraz schodowe ze stali czarnej lub nierdzewnej.',
+        features: ['Nowoczesny styl industrialny / loft', 'Bezpieczne i stabilne mocowania', 'Dopasowanie do architektury domu']
+      },
+      {
+        icon: `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>`,
+        title: 'Spawanie Mobilne w Terenie',
+        desc: 'Dojazd do gospodarstw, firm i na posesje z profesjonalnym sprzętem spawalniczym. Szybkie naprawy bez transportu maszyn do warsztatu.',
+        features: ['Dojazd do 50 km od Kętrzyna', 'Niezależność sprzętowa', 'Natychmiastowe usuwanie awarii']
+      }
+    ]
   }
 };
 
@@ -244,7 +301,7 @@ function setBranch(branchKey, pushHash = true) {
   const data = BRANCH_DATA[branchKey];
 
   // 1. Aktualizacja klas na body
-  document.body.classList.remove('theme-agro', 'theme-auto', 'theme-remont', 'theme-build', 'theme-hydro');
+  document.body.classList.remove('theme-agro', 'theme-auto', 'theme-remont', 'theme-build', 'theme-hydro', 'theme-spaw');
   document.body.classList.add(data.themeClass);
   document.body.setAttribute('data-theme', branchKey);
 
@@ -365,12 +422,13 @@ function setupSwipeGesture() {
   let touchEndX = 0;
   let touchEndY = 0;
 
-  const branches = ['agro', 'auto', 'remont', 'hydro'];
+  const branches = ['agro', 'auto', 'remont', 'hydro', 'spaw'];
   const pageMap = {
     agro: 'rolnictwo.html',
     auto: 'mechanika.html',
     remont: 'remonty.html',
     hydro: 'hydraulika.html',
+    spaw: 'spawalnictwo.html',
     build: 'remonty.html'
   };
 
@@ -447,6 +505,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initialBranch = 'remont';
   } else if (hash === 'hydro' || hash === 'hydraulika' || hash === 'kotlownia' || hash === 'kotlownie' || hash === 'wodkan') {
     initialBranch = 'hydro';
+  } else if (hash === 'spaw' || hash === 'spawalnictwo' || hash === 'spawacz' || hash === 'slusarstwo' || hash === 'spawanie') {
+    initialBranch = 'spaw';
   }
 
   setBranch(initialBranch, false);
@@ -456,7 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Nasłuchiwanie zmian hasha w URL
   window.addEventListener('hashchange', () => {
     const curHash = window.location.hash.replace('#', '').toLowerCase();
-    if (['agro', 'auto', 'remont', 'hydro', 'build'].includes(curHash)) {
+    if (['agro', 'auto', 'remont', 'hydro', 'spaw', 'build'].includes(curHash)) {
       setBranch(curHash, false);
     }
   });

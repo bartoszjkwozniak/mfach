@@ -1,4 +1,4 @@
-# MFach - Wizytówka Internetowa (4 Profile Usługowe)
+# MFach - Wizytówka Internetowa (5 Profili Usługowych)
 
 Nowoczesna, w pełni responsywna wizytówka internetowa dla firmy **MFach**, przygotowana do natychmiastowej publikacji na **GitHub Pages**.
 
@@ -10,7 +10,7 @@ Nowoczesna, w pełni responsywna wizytówka internetowa dla firmy **MFach**, prz
 
 ---
 
-## 🎨 4 Profile / Dziedziny działalności
+## 🎨 5 Profili / Dziedzin działalności
 
 Wizytówka posiada spójny układ graficzny oraz indywidualną identyfikację kolorystyczną dla każdej dziedziny:
 
@@ -34,13 +34,18 @@ Wizytówka posiada spójny układ graficzny oraz indywidualną identyfikację ko
    - **Zakres:** Nowoczesne kotłownie, pompy ciepła, instalacje wod-kan, biały montaż, stelaże Geberit, ogrzewanie podłogowe, usuwanie awarii i nieszczelności.
    - **Dedykowany plik:** `hydraulika.html` lub `index.html#hydro`
 
+5. **🔥 Spawalnictwo, Konstrukcje Stalowe & Ślusarstwo**
+   - **Kolorystyka:** Flame Crimson (Ognisty karmin `#dc2626` / akcent `#f87171`)
+   - **Zakres:** Spawanie MIG/MAG i TIG, naprawa pękniętych ram i elementów maszyn rolniczych, bramy, ogrodzenia, wiaty, balustrady oraz spawanie mobilne w terenie.
+   - **Dedykowany plik:** `spawalnictwo.html` lub `index.html#spaw`
+
 ---
 
 ## ⚡ Główne funkcje strony
-- **Błyskawiczny przełącznik 4-w-1** na stronie głównej (`index.html`) z płynną zmianą motywu kolorystycznego i oferty bez konieczności przeładowywania strony.
+- **Błyskawiczny przełącznik 5-w-1** na stronie głównej (`index.html`) z płynną zmianą motywu kolorystycznego i oferty bez konieczności przeładowywania strony.
 - **Gest Swipe na telefonie:** Przesunięcie palcem w lewo/prawo na smartfonie płynnie zmienia dziedziny.
 - **Interaktywna sekcja obszaru działania:** Wkomponowana mapa (`assets/map.png`) z promieniem obsługi do 50 km od Kętrzyna.
-- **Dedykowane podstrony** (`rolnictwo.html`, `mechanika.html`, `remonty.html`, `hydraulika.html`) – idealne do umieszczenia w osobnych ogłoszeniach OLX, wizytówkach Google czy kodach QR.
+- **Dedykowane podstrony** (`rolnictwo.html`, `mechanika.html`, `remonty.html`, `hydraulika.html`, `spawalnictwo.html`) – idealne do umieszczenia w osobnych ogłoszeniach OLX, wizytówkach Google czy kodach QR.
 - **Obsługa urządzeń mobilnych (Mobile First)** ze stałym paskiem szybkiego połączenia u dołu ekranu (*"Zadzwoń: 695 525 389"*).
 - **Czysty kod:** Czysty HTML5, CSS3 (zmienne CSS, Flexbox, Grid) oraz lekki Vanilla JavaScript bez ciężkich zewnętrznych bibliotek (szybkie ładowanie 100/100 w PageSpeed).
 
@@ -50,11 +55,12 @@ Wizytówka posiada spójny układ graficzny oraz indywidualną identyfikację ko
 
 ```text
 mfach/
-├── index.html           # Główna strona z interaktywnym przełącznikiem 4 branż
+├── index.html           # Główna strona z interaktywnym przełącznikiem 5 branż
 ├── rolnictwo.html       # Dedykowana podstrona: Ciągniki rolnicze (motyw zielony)
 ├── mechanika.html       # Dedykowana podstrona: Mechanika samochodowa (motyw niebieski)
 ├── remonty.html         # Dedykowana podstrona: Wykończenia & remonty (motyw pomarańczowy)
 ├── hydraulika.html      # Dedykowana podstrona: Hydraulika & kotłownie (motyw turkusowy)
+├── spawalnictwo.html    # Dedykowana podstrona: Spawalnictwo & ślusarstwo (motyw karminowy)
 ├── budownictwo.html     # Alias przekierowujący do remonty.html
 ├── css/
 │   └── style.css        # Główny arkusz stylów z paletami kolorów i responsywnością
@@ -66,6 +72,7 @@ mfach/
 │   ├── hero_auto.png    # Ilustracja 3D: Marcin z samochodem w warsztacie
 │   ├── hero_remont.png  # Ilustracja 3D: Marcin w wyremontowanym wnętrzu domu
 │   ├── hero_hydro.png   # Ilustracja 3D: Marcin w nowoczesnej kotłowni z pompą
+│   ├── hero_spawacz.png # Ilustracja 3D: Marcin w warsztacie spawalniczym ze sprzętem
 │   └── map.png          # Mapa obszaru działania firmy (Kętrzyn + 50 km)
 └── README.md            # Dokumentacja i instrukcja wdrożenia
 ```

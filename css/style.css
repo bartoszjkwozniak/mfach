@@ -95,6 +95,20 @@ body.theme-hydro,
   --theme-gradient: linear-gradient(135deg, #0e7490 0%, #0891b2 50%, #22d3ee 100%);
 }
 
+/* Motyw 5: Spawalnictwo & Ślusarstwo (Ognisty Karmin / Spawalniczy) */
+body.theme-spaw,
+[data-theme="spaw"] {
+  --primary: #dc2626;
+  --primary-hover: #b91c1c;
+  --primary-light: rgba(220, 38, 38, 0.12);
+  --primary-border: rgba(220, 38, 38, 0.35);
+  --primary-glow: rgba(220, 38, 38, 0.35);
+  --accent: #f87171;
+  --badge-bg: rgba(220, 38, 38, 0.15);
+  --badge-text: #fca5a5;
+  --theme-gradient: linear-gradient(135deg, #991b1b 0%, #dc2626 50%, #f87171 100%);
+}
+
 /* Reset & Bazowe */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -647,6 +661,9 @@ img, svg {
 .branch-preview-card.card-hydro {
   border-top: 4px solid #0891b2;
 }
+.branch-preview-card.card-spaw {
+  border-top: 4px solid #dc2626;
+}
 
 .branch-preview-card:hover {
   transform: translateY(-6px);
@@ -672,6 +689,11 @@ img, svg {
 .branch-preview-card.card-hydro:hover {
   border-color: rgba(6, 182, 212, 0.45);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(6, 182, 212, 0.2);
+}
+
+.branch-preview-card.card-spaw:hover {
+  border-color: rgba(220, 38, 38, 0.45);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(220, 38, 38, 0.2);
 }
 
 .branch-card-media {
@@ -711,6 +733,7 @@ img, svg {
 .badge-auto { background: rgba(37, 99, 235, 0.15); color: #93c5fd; }
 .badge-remont, .badge-build { background: rgba(234, 88, 12, 0.15); color: #fdba74; }
 .badge-hydro { background: rgba(6, 182, 212, 0.15); color: #67e8f9; }
+.badge-spaw { background: rgba(220, 38, 38, 0.15); color: #fca5a5; }
 
 .branch-preview-card h3 {
   font-size: 1.3rem;
